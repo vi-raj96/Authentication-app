@@ -31,7 +31,7 @@ function Login() {
             return handleError('Password is required')
         }
         try {
-            const url = "http://localhost:9090/auth/login";
+            const url = "https://authentication-app-api-sigma.vercel.app/auth/login";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
