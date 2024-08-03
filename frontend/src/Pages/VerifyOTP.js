@@ -22,7 +22,7 @@ function VerifyOTP() {
           return handleError('OTP is required')
         }
         try {
-            const url = "http://localhost:9090/auth/verify-otp";
+            const url = "https://authentication-app-api-sigma.vercel.app/auth/verify-otp";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
