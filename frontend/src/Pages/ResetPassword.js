@@ -23,7 +23,7 @@ function ResetPassword() {
           return handleError('Password is required')
         }
         try {
-            const url = "http://localhost:9090/auth/reset-password";
+            const url = "https://authentication-app-api-sigma.vercel.app/auth/reset-password";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
