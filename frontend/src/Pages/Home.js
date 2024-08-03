@@ -12,7 +12,7 @@ function Home() {
 
     const fetchUserDetails = async (userDetails) => {
         try {
-            const url = "http://localhost:9090/home";
+            const url = "https://authentication-app-api-sigma.vercel.app/home";
             const response = await fetch(url, {
                 headers: {
                     'Authorization': userDetails.jwtToken
