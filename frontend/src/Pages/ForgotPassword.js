@@ -24,7 +24,7 @@ function ForgotPassword() {
           return handleError('Email is required')
         }
         try {
-            const url = "http://localhost:9090/auth/forgot-password";
+            const url = "https://authentication-app-api-sigma.vercel.app/auth/forgot-password";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
